@@ -33,6 +33,8 @@ public class ReverseString {
 				System.out.println("The reversed string using Reverse Recursively is: " + strRec);
 				run = false;
 				break;
+				
+				/* Newly added case */
 			case 4:
 				String reverse= new StringBuilder(str).reverse().toString();
 				System.out.printf(" Original String : %s , Reversed String %s \n", str, reverse);
@@ -62,6 +64,8 @@ public class ReverseString {
 		else 
 			return reverseRec(a.substring(1)) + a.charAt(0);
 	}
+	
+	/* I have added the below method which reverses the string without using StringBuffer class  */
 	
 	public static String reverse(String source){
         if(source == null || source.isEmpty()){
