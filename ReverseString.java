@@ -13,8 +13,8 @@ public class ReverseString {
 		System.out.print("Enter a string to be reversed: ");
 		Scanner input = new Scanner(System.in);
 		String str = input.nextLine();
-		System.out.println("\nChoose which method of reverse to use \n 1.Reverse API \n 2.Reverse Iteration \n 3.Reverse Recursively \n");
-		
+		System.out.println("\nChoose which method of reverse to use \n 1.Reverse API \n 2.Reverse Iteration \n 3.Reverse Recursively \n 4.Reverse without 
+		using StringBuffer \n");
 		boolean run = true;
 		while(run == true){
 			System.out.print("Enter a number to choose the method : ");
@@ -34,6 +34,9 @@ public class ReverseString {
 				System.out.println("The reversed string using Reverse Recursively is: " + strRec);
 				run = false;
 				break;
+			case 4:
+				String reverse= new StringBuilder(str).reverse().toString();
+				System.out.printf(" Original String : %s , Reversed String %s \n", str, reverse);
 			}
 		}
 		input.close();
@@ -58,4 +61,18 @@ public class ReverseString {
 		else 
 			return reverseRec(a.substring(1)) + a.charAt(0);
 	}
+	
+	public static String reverse(String source){
+        if(source == null || source.isEmpty()){
+            return source;
+        }      
+        String reverse = "";
+        for(int i = source.length() -1; i>=0; i--){
+            reverse = reverse + source.charAt(i);
+        }
+     
+        return reverse;
+    }
+	
+
 }
