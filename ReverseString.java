@@ -13,8 +13,7 @@ public class ReverseString {
 		System.out.print("Enter a string to be reversed: ");
 		Scanner input = new Scanner(System.in);
 		String str = input.nextLine();
-		System.out.println("\nChoose which method of reverse to use \n 1.Reverse API \n 2.Reverse Iteration \n 3.Reverse Recursively \n 4.Reverse without 
-		using StringBuffer");
+		System.out.println("\nChoose which method of reverse to use \n 1.Reverse API \n 2.Reverse Iteration \n 3.Reverse Recursively \n 4.Reverse without using StringBuffer");
 		boolean run = true;
 		while(run == true){
 			System.out.print("Enter a number to choose the method : ");
