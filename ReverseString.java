@@ -37,6 +37,8 @@ public class ReverseString {
 			case 4:
 				String reverse= new StringBuilder(str).reverse().toString();
 				System.out.printf(" Original String : %s , Reversed String %s \n", str, reverse);
+				run = false;
+				break;
 			}
 		}
 		input.close();
